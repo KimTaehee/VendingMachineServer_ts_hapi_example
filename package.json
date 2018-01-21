@@ -1,0 +1,16 @@
+{
+  "name": "vending_machine_server",
+  "version": "0.1.0",
+  "description": "Vending Machine Server with ts+hapi+gulp",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Taehee Kim (slhyvaa@nate.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^4.0.0-alpha.1",
+    "typescript": "^2.6.2"
+  }
+}
