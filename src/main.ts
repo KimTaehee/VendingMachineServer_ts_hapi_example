@@ -1,3 +1,10 @@
-import { sayHello } from "./greet";
+import * as Server from "./server";
 
-console.log(sayHello("TypeScript"));
+const server = Server.init();
+
+server.start((err: Error) => {
+  if (err) {
+    throw err;
+  }
+  console.log(`Server running at : ${server.info.uri}`);
+});
