@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es5",
+    "target": "es6",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "removeComments": false,
     "sourceMap": true
   },
