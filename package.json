@@ -1,16 +1,22 @@
 {
   "name": "vending_machine_server",
   "version": "0.1.0",
-  "description": "Vending Machine Server with ts+hapi+gulp",
+  "description": "Vending Machine Server with ts+hapi",
   "main": "main.js",
   "scripts": {
-    "test": "test"
+    "start": "npm run serve",
+    "build": "npm run build-ts",
+    "serve": "node dist/main.js",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/main.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\""
   },
   "author": "Taehee Kim (slhyvaa@nate.com)",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-typescript": "^4.0.0-alpha.1",
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.14.11",
     "typescript": "^2.6.2"
   },
   "dependencies": {
